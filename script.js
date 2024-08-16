@@ -142,6 +142,7 @@ function GameController(player1 = "Player One", player2 = "Player Two", doc) {
         players[1].wins = 0;
         roundCount = 0;
         board.reset();
+        view.resetWinnerDisplay();
         view.updateBoard();
         view.updateScores(players[0],players[1]);
         view.updateCurrentPlayer(players[0].name);
